@@ -15,9 +15,11 @@ resource "aws_instance" "maleesha01" {
     ]
     
     subnet_id = "subnet-06455728e09e93034"
+    
+    # ssh key
     key_name = "my_key_01"
     
-    # assosiate public ip with the intance 
+    # assosiate a public ip with the intance 
     associate_public_ip_address = true
 
     # will delete the os disk when terminating the intance 
